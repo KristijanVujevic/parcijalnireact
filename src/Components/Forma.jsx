@@ -14,10 +14,10 @@ const Forma = ({ onUsernameSubmit }) => {
     <div style={{ display: "flex", justifyContent: "center" }}>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Ime korisnika:</Form.Label>
+          <Form.Label>Username:</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Ime korisnika"
+            placeholder="Username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />

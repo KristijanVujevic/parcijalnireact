@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import UserProfile from "./Components/UserProfile";
+import Forma from "./Components/Forma";
 
 function App() {
+  const [selectedUsername, setSelectedUsername] = useState("");
+
+  const handleUsernameSubmit = (username) => {
+    setSelectedUsername(username);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 style={{ textAlign: "center" }}>Parcijalni Ispit React</h1>
+      <Forma onUsernameSubmit={handleUsernameSubmit} />
+      {selectedUsername && <UserProfile username={selectedUsername} />}
     </div>
   );
 }

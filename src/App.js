@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import UserProfile from "./Components/UserProfile";
 import Forma from "./Components/Forma";
 import Tema from "./Components/Tema";
-import "./App.css"; // Import the CSS file
+import "./App.css";
 
 export const Theme = createContext({ theme: "light", setTheme: () => {} });
 

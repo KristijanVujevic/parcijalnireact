@@ -68,8 +68,8 @@ class UserProfile extends Component {
                 <Image
                   src={userData.avatar_url}
                   alt="Avatar"
-                  width={"600px"}
-                  height={"600px"}
+                  width={"50%"}
+                  height={"50%"}
                 />
 
                 <h3>Repositories:</h3>

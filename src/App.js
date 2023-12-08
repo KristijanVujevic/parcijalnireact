@@ -22,9 +22,8 @@ function App() {
   return (
     <div className={`App ${theme}`}>
       <Theme.Provider value={{ theme, setTheme }}>
-        <Tema />
         <h1 style={{ textAlign: "center" }}>Parcijalni Ispit React</h1>
-
+        <Tema />
         <Forma onUsernameSubmit={handleUsernameSubmit} />
         {selectedUsername && <UserProfile username={selectedUsername} />}
       </Theme.Provider>

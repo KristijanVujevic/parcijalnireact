@@ -15,10 +15,6 @@ function App() {
     setSelectedUsername(username);
   };
 
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  };
-
   return (
     <div className={`App ${theme}`}>
       <Theme.Provider value={{ theme, setTheme }}>
